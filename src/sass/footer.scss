@@ -1,0 +1,118 @@
+.footer{
+	height: 380px;
+	background-color:#333333;
+}
+.footer>div{
+	height: 380px;
+	width: 1280px;
+	margin: 0 auto;
+	display: flex;
+    flex-direction: column;
+}
+.footer .footer-logo{
+	height: 110px;
+	width: 100%;
+	background-color:#333333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer .footer-logo img{
+	transform: scale(0.6);
+}
+.footer .footer-nav{
+   height: 16px;
+   width: 100%;
+   background-color:#333;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footer .footer-nav ul{
+	height: 100%;
+	width: 800px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer .footer-nav ul li{
+	width: 158px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: 2px solid white;
+}
+.footer .footer-nav ul li:nth-of-type(5){
+	border: none;
+}
+.footer .footer-nav ul li a{
+	color: white;
+	font-size: 15px;
+}
+.footer .footer-share{
+	height: 90px;
+	width: 100%;
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer .footer-share>ul{
+height: 90px;
+width: 340px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.footer .footer-share ul li{
+	height: 50px;
+	width: 50px;
+	background-color:#494949;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+.footer .footer-share ul li img{
+	height:28px;
+}
+.footer .footer-share ul li:nth-of-type(3) a{
+	color: white;
+	font-size: 20px;
+}
+.footer .footer-info{
+	width: 100%;
+	height: 110px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333;
+}
+.footer .footer-info span{
+	height: 20px;
+	width: 100%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	font-size: 13px;
+	color: #909090;
+}
+.footer .footer-info span:nth-of-type(1){
+	font-weight: bolder;
+}
+.footer .footer-bottom{
+	width: 100%;
+	height: 54px;
+	background-color: #333;
+}
+.footer .footer-bottom span{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    color: #909090;
+    font-size: 14px;
+}

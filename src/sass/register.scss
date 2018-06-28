@@ -1,0 +1,175 @@
+.register-content{
+	height: 810px;
+	width: 1280px;
+	margin: 0 auto;
+	background: url("/images/register-images/passport-banner.jpg") no-repeat center center;
+	background-size: 100% 100%;
+	position: relative;
+}
+#register-form{
+	height: 550px;
+	width: 390px;
+	position:absolute;
+	overflow: hidden;
+	top: 110px;
+	right: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 10px 0;
+	background-color: white;
+	border: 1px solid #efefef;
+	border-radius: 5px;
+}
+#register-form input{
+	box-sizing: border-box;
+	padding-left: 5px;
+}
+#register-form .register-header{
+	height: 70px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #482618;
+	font-size: 18px;
+}
+#register-form>input{
+	height: 38px;
+	width: 300px;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+}
+#register-form input::-webkit-input-placeholder{
+	color: #bfbfbf;
+}
+#register-form .v-code{
+	height: 40px;
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#register-form .v-code>input{
+	height: 38px;
+	width: 140px;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+}
+.v-code{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+.v-code #v_container{
+	height: 24px;
+	width: 50px;
+}
+.shuaxin-code{
+	height: 24px;
+	width: 24px;
+	position: relative;
+	overflow: hidden;
+}
+.shuaxin-code:hover{
+	cursor: pointer;
+}
+.shuaxin-code img{
+	position: absolute;
+	top: -99px;
+	left: -169px;
+	transform: scale(0.5);
+}
+#register-form .telphone-hq-code{
+	height: 40px;
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#register-form .telphone-hq-code>input{
+	height: 38px;
+	width: 140px;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+}
+#register-form .telphone-hq-code #hq-code{
+	width: 150px;
+	height: 38px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #dadada;
+	background-color: #fafafa;
+	color: #442818;
+	font-size: 12px;
+	border-radius: 5px;
+}
+#register-form #my_button{
+	height: 48px;
+	width: 300px;
+	color: white;
+	background-color: #442818;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 3px;
+}
+#register-form #v_container{
+	height: 34px;
+	width: 120px;
+}
+#register-form .register-shuoming{
+	height: 14px;
+	width: 300px;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	color: #744f3a;
+}
+#register-form .register-shuoming a{
+	font-size: 12px;
+	color: #2a99fa;
+}
+#register-form .tishi1,
+#register-form .tishi2,
+#register-form .tishi3,
+#register-form .tishi4,
+#register-form .tishi5,
+#register-form .tishi6{
+	position:absolute;
+	font-size: 10px;
+	color: red;
+}
+#register-form .tishi1{
+	top: 116px;
+	left: 349px;
+}
+#register-form .tishi2{
+	top: 169px;
+	left: 349px;
+}
+#register-form .tishi3{
+	top: 223px;
+	left: 349px;
+}
+#register-form .tishi4{
+	top: 276px;
+	left: 349px;
+}
+#register-form .tishi5{
+	top: 335px;
+	left: 349px;
+}
+#register-form .tishi6{
+	top: 390px;
+	left: 349px;
+}
+#register-form .register-information{
+	font-size: 12px;
+	color: red;
+}

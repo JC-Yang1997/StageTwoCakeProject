@@ -1,0 +1,61 @@
+{
+	"res_code":0,
+	"res_error":"",
+	"res_body":{
+	"list":[[
+        {"img":"/images/index-images/c1.png",
+        "name":"百利甜情人",
+        "desc":"爱尔兰百利甜酒，新西兰奶油",
+	    "icon":[{"label":"聚会>"},
+                {"label":"情侣>"},
+                {"label":"人气>"}
+        ],
+        "price":"￥298.00/2.0磅"},
+
+        {"img":"/images/index-images/c2.png",
+        "name":"(彼尔德)黑白巧克力慕斯",
+        "desc":"白巧克力慕斯的甜，与黑巧克力浆的苦",
+	    "icon":[{"label":"新品>"},
+                {"label":"人气>"}],
+        "price":"￥298.00/2.0磅"},
+
+        {"img":"/images/index-images/c3.png",
+        "name":"芒果奶油蛋糕",
+        "desc":"自然成熟，应急现切芒果",
+	    "icon":[{"label":"情侣>"},
+                {"label":"童趣>"},
+                {"label":"聚会>"},
+                {"label":"人气>"}
+        ],
+        "price":"￥198.00/2.0磅"},
+
+        {"img":"/images/index-images/c4.png",
+        "name":"浅草",
+        "desc":"中国绿茶与脆爽果实",
+	    "icon":[{"label":"聚会>"},
+                {"label":"新品>"},
+                {"label":"人气>"}
+        ],
+        "price":"￥298.00/2.0磅"},
+
+         {"img":"/images/index-images/c5.png",
+        "name":"慕斯与焗芝士",
+        "desc":"鲜奶油慕斯，轻盐味，丰富甜",
+        "icon":[{"label":"情侣>"},
+                {"label":"低温>"}
+        ],
+        "price":"￥298.00/2.0磅"},
+
+        {"img":"/images/index-images/c6.png",
+        "name":"朗姆芝士",
+        "desc":"酒香，微苦，清新的柠檬",
+        "icon":[{"label":"情侣>"},
+                {"label":"白色>"},
+                {"label":"節日>"}
+        ],
+        "price":"￥298.00/2.0磅"}
+
+        ]]
+	}
+
+}

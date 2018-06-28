@@ -1,0 +1,11 @@
+require.config({
+	baseUrl:"/",
+	paths:{
+		jquery:"/lib/jquery/jquery-1.12.4.min",
+		load:"/js/loadHeaderAndFooter",
+		vCode:"/js/gVerify",
+		xm_carousel:"/lib/jquery-plugins/jquery.xm_carousel",
+		artTemplate:"/lib/artTemplate/template-web",
+		laydate:"/lib/date-api/laydate/laydate"
+	}
+});

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>好多蛋糕</title>
+	<link rel="stylesheet" type="text/css" href="/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/css/list.css">
+</head>
+<body>
+	<div class="header"></div>
+	<div class="list-content">
+	<div class="list-content-top">
+		<ul class="cake-fenlei">
+			<li>分类</li>
+			<li><a href="#">全部分类</a></li>
+			<li><a href="#">蛋糕</a></li>
+			<li><a href="#">冰淇淋</a></li>
+			<li><a href="#">咖啡下午茶</a></li>
+			<li><a href="#">常温蛋糕</a></li>
+			<li><a href="#">设计师礼品</a></li>
+		</ul>
+		<ul class="cake-kouwei">
+			<li>口味</li>
+			<li><a href="#">全部口味</a></li>
+			<li><a href="#">乳脂奶油</a></li>
+			<li><a href="#">慕斯</a></li>
+			<li><a href="#">乳酪</a></li>
+			<li><a href="#">巧克力</a></li>
+			<li><a href="#">坚果</a></li>
+			<li><a href="#">水果</a></li>
+			<li><a href="#">含酒</a></li>
+			<li><a href="#">咖啡</a></li>
+			<li><a href="#">冰淇淋</a></li>
+		</ul>
+	</div>
+	<div class="cake-list">
+		<!-- 蛋糕模板 -->
+		<script type="text/html" id="cake-list">
+			{{each list cakes}}
+			{{each cakes a index}}
+		<dl>
+			<dt>
+				<a href="detail.html"><img src="{{a.hot}}" onerror=altImg(this)>
+				<img src="{{a.img}}" alt="加载失败"></a>
+			</dt>
+			<dd>
+				<span>{{a.name}}</span>
+				<span>{{a.price}}</span>
+				<div>
+					{{each a.icon i index}}
+					<span>{{i.label}}</span>
+					{{/each}}
+				</div>
+				<button onclick="alert('有效');">加入购物车
+                   <span class="btn-mengban"></span>
+				</button>
+			</dd>
+		</dl>
+		{{/each}}
+		{{/each}}
+      	</script>
+	</div>
+</div>
+	<div class="footer"></div>
+	<script src="/lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="../lib/requireJS/require.js" data-main="../js/list"></script>
+    <script>
+    	function altImg(a){
+            if(true){
+            	a.style.display = "none";
+            }
+    	}
+    </script>
+</body>
+</html>

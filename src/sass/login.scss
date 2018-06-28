@@ -1,0 +1,203 @@
+.login-content{
+	height: 810px;
+	width: 1280px;
+	margin: 0 auto;
+	background: url("/images/register-images/passport-banner.jpg") no-repeat center center;
+	background-size: 100% 100%;
+	position: relative;
+}
+/*登录表单统一部分的编写*/
+#login-form{
+	height: 500px;
+	width: 390px;
+	background-color: white;
+	border: 1px solid #efefef;
+	position:absolute;
+	overflow: hidden;
+	top: 110px;
+	right: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 10px 0;
+	background-color: white;
+	border-radius: 5px;
+}
+#login-form .login-choose{
+	height: 70px;
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#login-form .login-choose a{
+	width: 148px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+#login-form .login-choose a:nth-of-type(1){
+	border-right: 2px solid #dcdcdc;
+    color: #482618;
+}
+#login-form .login-choose a:nth-of-type(2){
+    color: #dcdcdc;
+}
+#login-form input{
+	height: 38px;
+	width: 300px;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding-left:5px; 
+}
+#login-form input::-webkit-input-placeholder{
+	color: #bfbfbf;
+}
+/*第一种登录方式的css*/
+#login-form .login-method1{
+	height: 100px;
+	width: 300px;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.login-method1>input{
+	height: 38px;
+	width: 300px;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+}
+/*第二种登录方式的css*/
+.login-method2{
+	height: 140px;
+	width: 300px;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+#login-form .login-method2 input:nth-of-type(1){
+	height: 38px;
+	width: 300px;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+}
+#login-form .login-method2 .v-code{
+	height: 40px;
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#login-form .login-method2 .v-code>input{
+	height: 38px;
+	width: 140px;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+}
+.login-method2 .v-code{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+.login-method2 .v-code #v_container{
+	height: 34px;
+	width: 120px;
+}
+.login-method2 .shuaxin-code{
+	height: 24px;
+	width: 24px;
+	position: relative;
+	overflow: hidden;
+}
+.login-method2 .shuaxin-code img{
+	position: absolute;
+	top: -99px;
+	left: -169px;
+	transform: scale(0.5);
+}
+#login-form .login-method2 .telphone-hq-code{
+	height: 40px;
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#login-form .login-method2 .telphone-hq-code>input{
+	height: 38px;
+	width: 140px;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+}
+#login-form .login-method2 .telphone-hq-code #hq-code{
+	width: 150px;
+	height: 38px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #dadada;
+	background-color: #fafafa;
+	color: #442818;
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+#login-form #login-submit{
+	height: 48px;
+	width: 300px;
+	background-color: #442818;
+	color: white;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	cursor: pointer;
+}
+#login-form .login-information{
+	height: 16px;
+	width: 300px;
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#login-form .login-information .login-info-left{
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#744f3a;
+}
+#login-form .login-information input{
+	height: 12px;
+	width: 12px;
+}
+#login-form .login-information .login-info-right a{
+	font-size: 12px;
+	color:#744f3a;
+}
+#login-form .login-hengxian{
+	font-size: 12px;
+	color:#b3b3b3;
+}
+#login-form .login-wechat{
+	height: 80px;
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#login-form .login-wechat img{
+	transform: scale(0.6);
+}
+/*选择登录方式的div显示切换*/
+.login-method1{
+	display: none;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cake</title>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div class="header"></div>
+<!-- 首页内容部分 -->
+    <div class="index-content">
+    	<div class="index-lunbo"></div>
+    	<div class="index-choose">
+    		<a href="#"><img src="images/index-images/choose1.jpg" alt="加载失败"></a>
+    		<a href="#"><img src="images/index-images/choose2.jpg" alt="加载失败"></a>
+    		<a href="#"><img src="images/index-images/choose3.jpg" alt="加载失败"></a>
+    		<a href="#"><img src="images/index-images/choose4.jpg" alt="加载失败"></a>    	  	
+    	</div>
+
+    	<!-- 专区模板 -->
+      
+    	<div class="index-zhuanqu">
+        <button class="list-left"></button>
+        <button class="list-right"></button>
+    		<div class="index-zhuanqu-top">
+    			<span>新品</span>
+    			<span>/专区</span>
+    		</div>
+    		<div class="index-zhuanqu-banner">
+    			<a href="#"><img src="images/index-images/zhuanqu-banner1.jpg"></a>
+    		</div>
+    		<div class="index-zhuanqu-list">
+        <div class="index-zhuanqu-in" id="zhuanqu1">
+
+        <!-- 商品列表模板   -->
+        <script type="text/html" id="index-list1">
+            {{each list products}}
+            {{each products prod index}}
+    			<dl class="list-1">
+    				<dt><a href="#">
+    					<img src="{{prod.img}}">
+    				</a></dt>
+    				<dd>
+    					<span>{{prod.name}}</span>
+    					<span>{{prod.desc}}</span>
+              <div>
+                {{each prod.icon i index}}
+    						<span>{{i.label}}</span>
+                {{/each}}
+              </div>
+              <div>
+    						<span>{{prod.price}}</span>
+                  <a href="#">加入购物车</a>
+    					</div>
+    				</dd> 
+    			</dl> 
+          {{/each}}
+          {{/each}}
+         </script>
+
+         </div>
+    		</div>
+    	</div>
+
+      <div class="index-zhuanqu">
+        <button class="list-left"></button>
+        <button class="list-right"></button>
+        <div class="index-zhuanqu-top">
+          <span>人氣</span>
+          <span>/专区</span>
+        </div>
+        <div class="index-zhuanqu-banner">
+          <a href="#"><img src="images/index-images/zhuanqu-banner2.jpg"></a>
+        </div>
+        <div class="index-zhuanqu-list">
+        <div class="index-zhuanqu-in" id="zhuanqu2">
+
+        <!-- 商品列表模板   -->
+        <script type="text/html" id="index-list2">
+            {{each list products}}
+            {{each products prod index}}
+          <dl class="list-2">
+            <dt><a href="#">
+              <img src="{{prod.img}}">
+            </a></dt>
+            <dd>
+              <span>{{prod.name}}</span>
+              <span>{{prod.desc}}</span>
+              <div>
+                {{each prod.icon i index}}
+                <span>{{i.label}}</span>
+                {{/each}}
+              </div>
+              <div>
+                <span>{{prod.price}}</span>
+                  <a href="#">加入购物车</a>
+              </div>
+            </dd> 
+          </dl> 
+          {{/each}}
+          {{/each}}
+         </script>
+         </div>
+        </div>
+      </div>
+
+      <!-- 活动门 -->
+      <div class="index-hdm">
+      	<div class="index-hdm-top">
+      		<span>活动门</span>
+      		<span>/是被吸引了吧</span>
+      	</div>
+      	<div class="index-hdm-banner">
+      		<a href="#"><img src="images/index-images/hdm-banner.jpg"></a>
+      	</div>
+      </div>
+
+      <!-- 文章版块儿 -->
+      <div class="index-news">
+      	<div class="index-news-top">
+      		<span>廿一客</span>
+      		<span>/文章</span>
+      	</div>
+      	<div class="index-news-content">
+      		<dl>
+      			<dt><a href="#"><img src="images/index-images/news1.jpg"></a></dt>
+      			<dd>
+      				<span>春季刊·茶</span>
+      				<span><a href="#">阅读全文>></a></span>
+      			</dd>
+      		</dl>
+      		<dl>
+      			<dt><a href="#"><img src="images/index-images/news2.jpg"></a></dt>
+      			<dd>
+      				<span>春季刊·私享</span>
+      				<span><a href="#">阅读全文>></a></span>
+      			</dd>
+      		</dl>
+      	</div>
+      </div>
+    </div>
+    <div class="footer"></div>
+     <script src="lib/jquery/jquery-1.12.4.min.js"></script>
+     <script src="lib/requireJS/require.js" data-main="js/index"></script>
+</body>
+</html>

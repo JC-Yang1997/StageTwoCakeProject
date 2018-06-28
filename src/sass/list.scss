@@ -1,0 +1,145 @@
+.list-content{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+}
+.list-content-top{
+	height: 120px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+.list-content-top>ul{
+	height:40px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.list-content-top ul li a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	color: #684029;
+	margin-right: 26px;
+}
+.list-content-top ul li a:hover{
+	color: #bb9772;
+}
+.list-content-top ul>li:nth-of-type(1){
+	width: 80px;
+	color: #9b9b9b;
+	font-size: 12px;
+}
+.cake-list{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.cake-list dl{
+	margin: 15px 20px;
+	height: 350px;
+	width: 260px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cake-list dl dt{
+	height: 220px;
+	width: 100%;
+}
+.cake-list dl dt a{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+.cake-list dl dt a img:nth-of-type(1){
+	height: 25px;
+    width: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cake-list dl dt img:nth-of-type(2){
+height: 112%;
+width: 80%;
+}
+.cake-list dl dd{
+	height: 200px;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.cake-list dl dd span{
+	height: 20px;
+	line-height: 20px;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: #684029;
+}
+.cake-list dl dd div:nth-of-type(1){
+	height: 28px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cake-list dl dd div:nth-of-type(1) span{
+	height: 20px;
+	width: 50px;
+	border: 1px solid #d5bfa7;
+	color: #d5bfa7;
+	font-size: 12px;
+	border-radius: 10px;
+	margin: 0 5px;
+}
+.cake-list dl dd button{
+	position: relative;
+	border: none;
+	height: 24px;
+	width: 50%;
+	line-height: 24px;
+	text-align: center;
+	padding-left: 24px;
+	color: #623c25;
+	font-size: 14px;
+	background: url(/images/list-images/shopcar.jpg) no-repeat center center;
+	background-position: 0px 3px;
+}
+.cake-list dl dt img:hover,.cake-list dl dd span:hover{
+	cursor: pointer;
+	color: #d5bfa7;
+}
+.cake-list dl dd button:hover{
+	cursor: pointer;
+	color: #d5bfa7;   
+	padding-left: 20px;
+}
+.cake-list dl dd button:hover .btn-mengban{
+	height: 24px;
+	width: 24px;
+	position: absolute;
+	left: 0px;
+	top: 3px;
+	background-color: white;
+	opacity: 0.4;
+	z-index: 998;
+}

@@ -1,0 +1,531 @@
+.detail-content{
+	margin: 0 auto;
+	width: 1050px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detail-content .cake-banner{
+	width: 100%;
+	height: 530px;
+	display: flex;
+	justify-content: space-between;
+	margin-top:80px; 
+}
+.detail-content .cake-banner .cake-big-banner{
+	width: 920px;
+	height: 100%;
+	position: relative;
+}
+.detail-content .cake-banner .cake-big-banner img{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.detail-content .cake-banner .cake-small-banner{
+	width: 90px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	overflow: hidden;
+}
+.detail-content .cake-banner .cake-small-banner a{
+	height: 48px;
+	width: 86px;
+	margin: 10px 0;
+	box-sizing: border-box;
+}
+.detail-content .cake-banner .cake-small-banner a:hover{
+	border: 1px solid #c69c6d;
+}
+.detail-content .cake-banner .cake-small-banner a img{
+	height: 100%;
+	width: 100%;
+}
+.detail-content .cake-information{
+	height: 540px;
+	width: 100%;
+	margin-top: 20px;
+}
+.top-box{
+	height: 400px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bottom-box{
+	border-top: 1px solid #d8d8d8;
+	height: 138px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.bottom-box span{
+	font-size: 11px;
+	color: #684029;
+	height: 24px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.leftbox{
+	height:100%;
+	width: 480px;
+}
+.leftbox .cake-name{
+	height: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 24px;
+	color: #684029;
+}
+.leftbox .cake-label{
+	height: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.leftbox .cake-label span{
+	height: 20px;
+	width: 60px;
+	box-sizing: border-box;
+	border: 1px solid #d5bfa7;
+	color: #d5bfa7;
+	font-size: 12px;
+	border-radius: 8px;
+	margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftbox .cake-make{
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	font-size: 12px;
+	color: #684029;
+	margin: 10px 0;
+}
+.leftbox .cake-make div{
+	width: 140px;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 20px;
+}
+.leftbox .cake-make div:nth-of-type(1){
+	background: url(/images/detail-images/jiu.png) no-repeat -5px -5px;
+	background-size: 60px 60px;
+}
+.leftbox .cake-make div:nth-of-type(2){
+	background: url(/images/detail-images/hua.png) no-repeat -5px -5px;
+	background-size: 60px 60px;
+}
+.leftbox .cake-xinxi{
+	height: 150px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:flex-start;
+}
+.leftbox .cake-xinxi span{
+	font-size: 13px;
+	line-height: 26px;
+}
+.leftbox .cake-xinxi span:nth-of-type(1),
+.leftbox .cake-xinxi span:nth-of-type(2),
+.leftbox .cake-xinxi span:nth-of-type(3){
+	color: #684029;
+}
+.leftbox .cake-xinxi span:nth-of-type(4),
+.leftbox .cake-xinxi span:nth-of-type(5){
+	color: red;
+}
+.leftbox .cake-baoxian{
+	margin: 5px 0;
+	height: 40px;
+	width: 100%;
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	color: #684029;
+	font-size: 14px;
+}
+.leftbox .cake-baoxian i{
+	height: 50px;
+	width: 50px;
+	background: url(/images/detail-images/icon.png) no-repeat -310px -4px;
+    transform: scale(0.6);
+}
+.leftbox .cake-sweet{
+	margin: 5px 0;
+	height: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	box-sizing: border-box;
+	background:url(/images/detail-images/sweet.png) no-repeat 10px 8px;
+	font-size: 14px;
+	color: #684029;
+	padding-left: 50px;
+	overflow: hidden;
+}
+.leftbox .cake-sweet i{
+	height: 22px;
+	width: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3px;
+}
+.rightbox{
+	height: 100%;
+	width: 500px;
+}
+.rightbox .rightbox1{
+	height: 170px;
+	width: 100%;
+	display: flex;
+}
+.rightbox1 .rightbox1-l{
+	width: 300px;
+	height: 100%;
+} 
+.rightbox1 .rightbox1-r{
+	width: 200px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.rightbox1 .rightbox1-r span{
+	height: 30px;
+	width:100%;
+	display: flex;
+	box-sizing: border-box;
+	padding-left: 40px;
+	justify-content: flex-start;
+	align-content: center;
+	font-size: 10px;
+	color: #684029;
+}
+.rightbox1 .rightbox1-r span:nth-of-type(1){
+  background:url(/images/detail-images/sicon1.jpg) no-repeat 15px 0px;
+}
+.rightbox1 .rightbox1-r span:nth-of-type(2){
+  background:url(/images/detail-images/sicon2.jpg) no-repeat 15px 0px;
+}
+.rightbox1 .rightbox1-r span:nth-of-type(3){
+  background:url(/images/detail-images/sicon3.jpg) no-repeat 15px 0px;
+}
+.rightbox1 .rightbox1-r span:nth-of-type(4){
+  background:url(/images/detail-images/sicon4.jpg) no-repeat 15px 0px;
+}
+.rightbox1 .rightbox1-r span:nth-of-type(5){
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	padding-left: 20px;
+}
+.rightbox1 .rightbox1-r span:nth-of-type(5) section:nth-of-type(1){
+	font-size: 14px;
+	line-height: 20px;
+	color: #c69c6d;
+	text-align: end;
+}
+.rightbox1 .rightbox1-r span:nth-of-type(5) section:nth-of-type(2){
+	font-size: 20px;
+	line-height: 20px;
+	color: #c69c6d;
+	text-align: end;
+}
+.rightbox1 .rightbox1-r span:nth-of-type(5) section:nth-of-type(3){
+	font-size: 16px;
+	line-height: 20px;
+	color: #c69c6d;
+	text-align: end;
+}
+.rightbox1 .rightbox1-l img{
+	height: 100%;
+	width: 100%;
+}
+.rightbox .rightbox2 ul{
+	height: 70px;
+	width: 100%;
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.rightbox .rightbox2 ul li{
+	height: 30px;
+	width: 80px;
+    margin: 0 5px;
+    box-sizing: border-box;
+    border:1px solid #e7e0dd;
+    padding-right: 13px;
+}
+.rightbox .rightbox2 ul li:nth-of-type(1){
+	font-size: 12px;
+	color: #684029;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	padding:0;
+}
+.rightbox .rightbox2 ul li a{
+	height: 100%;
+	width: 100%;
+	font-size: 12px;
+	color: #684029;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.rightbox .rightbox2 ul li a span{
+	position:relative;
+	height: 10px;
+	width: 10px;
+	top: -9px;
+	left: 0px;
+	overflow: hidden;
+	display: none;
+}
+.rightbox .rightbox2 ul li a span img{
+	position: absolute;
+	top: -40px;
+    left: 0px;
+    height: 120px;
+    width: 310px;
+}
+.rightbox .rightbox2 ul .choose-c:nth-of-type(7){
+ width: 140px;
+}
+.rightbox .rightbox2 ul .choose-c:nth-of-type(7) a span{
+ left: -10px;
+}
+.rightbox .rightbox3{
+	height: 30px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.rightbox .rightbox3 a{
+	height: 30px;
+	width: 166px;
+	line-height:30px;
+	text-align: center;
+	font-size: 13px;
+	margin-right: 10px;
+}
+.rightbox .rightbox3 a:nth-of-type(1){
+	background-color: #f4f4f4;
+	color: #7a5844;
+}
+.rightbox .rightbox3 a:nth-of-type(2){
+	background-color: #684029;
+	color: #ffffff;
+}
+.cake-xiangqingtu{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+}
+.cake-xiangqingtu img{
+	height: 438px;
+	width: 100%;
+	margin-top: 20px; 
+}
+.cake-xiangqingtu p{
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	color: #999999;
+	height: 30px;
+	line-height: 30px;
+}
+.cake-xiangqingtu span{
+	width: 100%;
+	font-size: 12px;
+	color: #684029;
+	line-height: 24px;
+	padding: 12px 0;
+	border-bottom: 1px solid #eeeeee;
+}
+.cake-xiangqingtu pre{
+	padding: 12px 0;
+	color: #684029;
+}
+.xiding{
+	margin: 0 auto;
+	height: 80px;
+	width: 1200px;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	position: fixed;
+	top: 0px;
+	z-index: 999;
+	box-sizing: border-box;
+	padding: 10px 20px;
+	background-color: white;
+}
+.xiding-l{
+	height: 100%;
+	width: 360px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	color: #684029;
+}
+.xiding-r{
+	height:100%;
+	width: 220px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.xiding-r div:nth-of-type(1){
+	height: 40px;
+	width: 110px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 21px;
+	color: #481902;
+}
+.xiding-r div:nth-of-type(2){
+height: 40px;
+width: 40px;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+}
+.xiding-r div:nth-of-type(2) img{
+	position: absolute;
+	top: -87px;
+	left: -438px;
+}
+.cake-tuijian{
+	height: 328px;
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content:space-between;
+	border: 1px solid #e1e1e1;
+	margin-bottom: 100px;
+}
+.cake-tuijian .tuijian-title{
+	height: 40px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px;
+	font-size: 14px;
+	background-color: #fbfbfb;
+	color: #684029;
+}
+.cake-tuijian .tuijian-list{
+height: 280px;
+width: 100%;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.cake-tuijian .tuijian-list dl{
+	height: 250px;
+	width: 25%;
+	margin: 0 !important;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	position: relative;
+}
+.cake-tuijian .tuijian-list dl dt{
+	height: 210px;
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cake-tuijian .tuijian-list dl dt a{
+	height: 198px;
+	width: 180px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.cake-tuijian .tuijian-list dl dt a img{
+	height: 100%;
+	width: 100%;
+}
+.cake-tuijian .tuijian-list dl dd{
+	height: 38px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cake-tuijian .tuijian-list dl dd span{
+	height: 20px;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+}
+.cake-tuijian .tuijian-list dl dd span:nth-of-type(1){
+	color: #8b663c;
+}
+.cake-tuijian .tuijian-list dl dd span:nth-of-type(2){
+	color: #cba375;
+}
+.tuijian-list>dl>div{
+	display: none;
+}
+.tuijian-list>dl>div>span:nth-of-type(1){
+	color: white;
+	font-size: 12px;
+	height: 30px;
+	width: 120px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.tuijian-list>dl>div>span:nth-of-type(2){
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	position: relative;
+	background: white;
+	cursor: pointer;
+}
+.tuijian-list>dl>div>span:nth-of-type(2)>img{
+	position: absolute;
+	left: -492px;
+	top: -140px;
+	transform: scale(0.7);
+}

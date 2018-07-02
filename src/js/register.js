@@ -20,7 +20,6 @@ require(["../js/config.js"],function(){
 			}
 		});
 
-		   
 
 		    // 生成手机验证码功能
 		    $("#hq-code").on("click",function(){
@@ -103,7 +102,8 @@ require(["../js/config.js"],function(){
 		    // 进行数据库注册的数据传递
 		    $("#my_button").on("click",function(){
 		    	$(".register-information").html("");
-		    	if($(".tishi1").html()==""&&$(".tishi2").html()==""&&$(".tishi3").html()==""&&$(".tishi4").html()==""&&$(".tishi5").html()==""&&$(".tishi6").html()==""&&$(".register-information").html()==""){
+		    	if($(".tishi1").html()==""&&$(".tishi2").html()==""&&$(".tishi3").html()==""&&$(".tishi4").html()==""&&$(".tishi5").html()==""&&$(".tishi6").html()==""&&$(".register-information").html()==""
+		    	&&$("#register-telphone").val()!=""&&$("#register-password").val()!=""&&$("#register-c-password").val()!=""&&$("#code_input").val()!=""&&$("#telphone-code").val()!=""&&$("#birthday").val()!=""){
 				$.post("http://localhost/StageTwoCakeProject/src/php/register.php", $("#register-form").serialize(), function(data){
 				if (data.res_code === 1){
 					alert("注册成功");

@@ -41,21 +41,22 @@
 			{{each cakes a index}}
 		<dl>
 			<dt>
-				<a href="detail.html"><img src="{{a.hot}}" onerror=altImg(this)>
-				<img src="{{a.img}}" alt="加载失败"></a>
+				<a href="/html/detail.html"><img src="{{a.hot}}" onerror=altImg(this)>
+				<img class="t-img" src="{{a.img}}" alt="加载失败"></a>
 			</dt>
 			<dd>
-				<span>{{a.name}}</span>
-				<span>{{a.price}}</span>
+				<span class="t-name">{{a.name}}</span>
+				<span class="t-price">{{a.price}}</span>
 				<div>
 					{{each a.icon i index}}
 					<span>{{i.label}}</span>
 					{{/each}}
 				</div>
-				<button onclick="alert('有效');">加入购物车
+				<button class="addtocar">加入购物车
                    <span class="btn-mengban"></span>
 				</button>
 			</dd>
+			<span class="t-id" style="display:none;">{{a.id}}</span>
 		</dl>
 		{{/each}}
 		{{/each}}

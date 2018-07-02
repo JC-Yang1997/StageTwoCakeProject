@@ -1,0 +1,40 @@
+.cake-tuijian{
+	height: 328px;
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content:space-between;
+	border: 1px solid #e1e1e1;
+	margin: 100px 0;
+}
+.cake-tuijian .tuijian-title{
+	height: 40px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px;
+	font-size: 14px;
+	background-color: #fbfbfb;
+	color: #684029;
+}
+.cake-tuijian .tuijian-list{
+height: 280px;
+width: 100%;
+display: flex;
+justify-content:center;
+align-items: center;
+}
+.cake-tuijian .tuijian-list .choosecake{
+	height: 250px;
+	width: 250px;
+	margin:10px 30px;
+}
+.cake-tuijian .tuijian-list div a{
+	height: 100%;
+	width: 100%;
+}
+.cake-tuijian .tuijian-list div a img{
+	height: 100%;
+	width: 100%;
+}
+

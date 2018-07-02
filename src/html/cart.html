@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车界面</title>
+	<link rel="stylesheet" type="text/css" href="/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/css/tuijian.css">
+	<link rel="stylesheet" type="text/css" href="/css/cart.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="cart-content">
+
+        <!-- 空购物车界面 -->
+    	<div class="empty-car">
+    		<img src="/images/cart-images/cartempty.png">
+    		<span>您的购物车里还没有商品</span>
+    		<a href="/html/list.html">去购物>></a>
+    	</div>
+
+        <!-- 购物车主界面 -->
+    	<div class="car-body">
+         <div class="car-title">
+             <ul>
+                 <li>商品</li>
+                 <li>生日牌</li>
+                 <li>单价</li>
+                 <li>数量</li>
+                 <li>金额</li>
+                 <li></li>
+             </ul>
+         </div>
+         <div class="car-list">
+            <script type="text/html" id="list">
+            {{each products prod}}
+             <ul class="car-muban">
+                 <li>
+                     <dl>
+                         <dt>
+                            <a href="#"><img class="c-img" src="{{prod.img}}"></a>
+                        </dt>
+                         <dd>
+                             <span><a href="#" class="c-name">{{prod.name}}</a></span>
+                             <span class="c-price">{{prod.price}}</span>
+                             <span><img src="/images/cart-images/beizhu.jpg"></span>
+                         </dd>
+                     </dl>
+                 </li>
+                 <li>
+                     <select class="shengripai">
+                         <option>生日快乐</option>
+                         <option>Happy Birthday</option>
+                         <option>节日快乐</option>
+                         <option>自定义</option>
+                         <option selected class="xuanze">选择生日牌</option>
+                     </select>
+                 </li>
+                 <li class="c-price">{{prod.price}}</li>
+                 <li>
+                     <span class="add">+</span>
+                     <span class="amount">{{prod.amount}}</span>
+                     <span class="minus">-</span>
+                 </li>
+                 <li class="c-allprice">￥{{prod.aPrice}}.00</li>
+                 <li class="delete-r">x</li>
+             </ul>
+             {{/each}}
+             </script>
+         </div>
+
+         <!-- 蛋糕配件选择界面 -->
+         <div class="cake-peijian">
+             <ul>
+                <!-- 配件列表 -->
+                 <li>
+                     <dl>
+                         <dt>
+                             <a href="#"><img class="t-img" src="/images/cart-images/f-lazhu.jpg"></a>
+                         </dt>
+                         <dd>
+                             <span>
+                                 <section class="t-name">方形蜡烛</section>
+                                 <section>配件</section>
+                             </span>
+                             <span class="t-price">￥5.00</span>
+                             <span class="addtocar"><img src="/images/cart-images/icon.png"></span>
+                             <span class="t-id" style="display: none;">1000</span>
+                         </dd>
+                     </dl>
+                 </li>
+                 <li>
+                     <dl>
+                         <dt>
+                             <a href="#"><img class="t-img" src="/images/cart-images/canju.jpg"></a>
+                         </dt>
+                         <dd>
+                             <span>
+                                 <section class="t-name">餐具</section>
+                                 <section>配件</section>
+                             </span>
+                             <span class="t-price">￥0.00</span>
+                             <span class="addtocar"><img src="/images/cart-images/icon.png"></span>
+                             <span class="t-id" style="display: none;">1001</span>
+                         </dd>
+                     </dl>
+                 </li>
+                 <li>
+                     <dl>
+                         <dt>
+                             <a href="#"><img class="t-img" src="/images/cart-images/c-lazhu.jpg"></a>
+                         </dt>
+                         <dd>
+                             <span>
+                                 <section class="t-name">拷贝蜡烛-爱尔兰咖</section>
+                             </span>
+                             <span class="t-price">￥8.00/个</span>
+                             <span class="addtocar"><img src="/images/cart-images/icon.png"></span>
+                             <span class="t-id" style="display: none;">1002</span>
+                         </dd>
+                     </dl>
+                 </li>
+              </ul>
+         </div>
+        </div>
+
+         <!-- 结算盒子界面 -->
+         <div class="car-jiesuan">
+             <div class="qingkong" style="cursor: pointer;"><span><img src="/images/cart-images/icon.png"></span>全部清空</div>
+             <div class="zhangdan">
+                 <span class="all-money"></span>
+                 <span class="peisong">配送费：￥0.00</span>
+                 <span class="huodong">活动优惠：￥10.00</span>
+                 <hr>
+                 <span class="pay-money">合计：￥0.00</span>
+                 <span class="peisong-i">订单已满￥100元，享免配送费服务</span>
+                 <button id="jiezhang">去结算</button>
+             </div>
+         </div>   
+
+
+    	<div class="cake-tuijian"></div>
+    </div>
+    <div class="footer"></div>
+	<script src="/lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="/lib/requireJS/require.js" data-main="../js/cart"></script>
+</body>
+</html>

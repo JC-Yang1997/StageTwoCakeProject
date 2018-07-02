@@ -43,16 +43,17 @@
     					<img src="{{prod.img}}">
     				</a></dt>
     				<dd>
-    					<span>{{prod.name}}</span>
-    					<span>{{prod.desc}}</span>
+    					<span class="t-name">{{prod.name}}</span>
+    					<span class="t-desc">{{prod.desc}}</span>
               <div>
                 {{each prod.icon i index}}
     						<span>{{i.label}}</span>
                 {{/each}}
               </div>
-              <div>
-    						<span>{{prod.price}}</span>
-                  <a href="#">加入购物车</a>
+              <div class="addtocar">
+                <section style="display:none;" class="t-id">{{prod.id}}</section>
+    						<span class="t-price">{{prod.price}}</span>
+                <a style="cursor: pointer;">加入购物车</a>
     					</div>
     				</dd> 
     			</dl> 
@@ -86,16 +87,16 @@
               <img src="{{prod.img}}">
             </a></dt>
             <dd>
-              <span>{{prod.name}}</span>
-              <span>{{prod.desc}}</span>
+              <span class="t-name">{{prod.name}}</span>
+              <span class="t-desc">{{prod.desc}}</span>
               <div>
                 {{each prod.icon i index}}
                 <span>{{i.label}}</span>
                 {{/each}}
               </div>
-              <div>
-                <span>{{prod.price}}</span>
-                  <a href="#">加入购物车</a>
+              <div class="addtocar">
+                <span class="t-price">{{prod.price}}</span>
+                  <a style="cursor: pointer;">加入购物车</a>
               </div>
             </dd> 
           </dl> 

@@ -6,6 +6,8 @@ require.config({
 		vCode:"/js/gVerify",
 		xm_carousel:"/lib/jquery-plugins/jquery.xm_carousel",
 		artTemplate:"/lib/artTemplate/template-web",
-		laydate:"/lib/date-api/laydate/laydate"
+		laydate:"/lib/date-api/laydate/laydate",
+		cookie:"/lib/jquery-plugins/jquery.cookie",
+		loadtuijian:"/js/loadtuijian"
 	}
 });

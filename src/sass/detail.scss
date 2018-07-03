@@ -195,7 +195,7 @@
 	margin: 3px;
 }
 .rightbox{
-	height: 100%;
+	height: 400px;
 	width: 500px;
 }
 .rightbox .rightbox1{
@@ -528,4 +528,110 @@ align-items: center;
 	left: -492px;
 	top: -140px;
 	transform: scale(0.7);
+}
+.xiding .x-rightbox{
+	height: 400px;
+	width: 500px;
+	position: absolute;
+	top: 80px;
+	right: 60px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+.xiding .x-rightbox .x-rightbox1{
+	width: 100%;
+	height: 170px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.xiding .x-rightbox .x-rightbox1 .x-rightbox1-l{
+	width: 300px;
+	height: 100%;
+}
+.xiding .x-rightbox .x-rightbox1 .x-rightbox1-l img{
+	height: 100%;
+	width: 100%;
+}
+.xiding .x-rightbox .x-rightbox1 .x-rightbox1-r{
+	height: 100%;
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 10px;
+	justify-content: space-around;
+}
+.xiding .x-rightbox .x-rightbox1 .x-rightbox1-r span{
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
+}
+.xiding .x-rightbox .x-rightbox1 .x-rightbox1-r span{
+	display: flex;
+}
+.xiding .x-rightbox .x-rightbox2{
+	height: 66px;
+	width: 100%;
+}
+.xiding .x-rightbox .x-rightbox2 ul{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.xiding .x-rightbox .x-rightbox2 ul li{
+	height: 30px;
+	width: 80px;
+    margin: 0 5px;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	position: relative;
+}
+.xiding .x-rightbox .x-rightbox2 ul li a{
+	color: #684029;
+}
+.xiding .x-rightbox .x-rightbox2 ul li a span{
+	position:absolute;
+	display: flex;
+	height: 10px;
+	width: 10px;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	display: none;
+}
+.xiding .x-rightbox .x-rightbox2 ul li img{
+	position: absolute;
+	top: -40px;
+    left: 0px;
+    height: 120px;
+    width: 310px;
+}
+.xiding .x-rightbox .x-rightbox3{
+	height: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.xiding .x-rightbox .x-rightbox3 a{
+	height: 100%;
+	width: 170px;
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.xiding .x-rightbox .x-rightbox3 a:nth-of-type(1){
+	background-color: #f4f4f4;
+	color: #7a5844;
+	margin:0 20px;
+}
+.xiding .x-rightbox .x-rightbox3 a:nth-of-type(2){
+	background-color: #684029;
+	color: white;
 }

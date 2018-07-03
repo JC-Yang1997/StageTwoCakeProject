@@ -1,6 +1,9 @@
 require(["../js/config.js"],function(){
 	require(["jquery","load"],function($){
 			     $(".xiding").hide();
+           $(".x-rightbox",".xiding").css({
+              "display":"none"
+          });
            $("#choose-c-1").css({"border":"1px solid #684029"});
             $("#choose-1").show();
             $(".banner-pic").on("mouseover",function(){
@@ -37,6 +40,25 @@ require(["../js/config.js"],function(){
           	if(top>1000){
           		$(".xiding").show();
           		$(".header").hide();
+              $(".xiding-price").on("mouseover",function(){
+                $(".x-rightbox",".xiding").css({
+                  "display":"flex"
+                });
+                $(".x-choose").hide();
+                $(".x-choose-c").css({"border":"1px solid #e7e0dd"});
+                $(".x-choose-c").on("click",function(){
+                event.preventDefault();
+                $(".x-choose-c").css({"border":"1px solid #e7e0dd"});
+                $(".x-choose").hide();
+                $(this).css({"border":"1px solid #684029"});
+                $(this.children[0].children[0]).show();
+              });
+              });
+              $(".x-rightbox").on("mouseleave",function(){
+                $(".x-rightbox",".xiding").css({
+                  "display":"none"
+                });
+              });
           	}
           	else{
           		$(".xiding").hide();
